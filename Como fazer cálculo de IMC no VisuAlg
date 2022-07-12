@@ -1,0 +1,30 @@
+lgoritmo "imc"
+
+Var
+
+   ALTURA,PESO,IMC:REAL
+
+Inicio
+   ESCREVAL("DIGITE A ALTURA DA PESSOA::")
+   LEIA(ALTURA)
+   ESCREVAL("DIGITE O PESO DA PESSOA..")
+   LEIA(PESO)
+   IMC<-PESO/(ALTURA^2)
+   SE IMC<20 ENTAO
+      ESCREVAL("PESSOA ABAIXO DO PESO")
+   SENAO
+        SE ((IMC>=20) E (IMC<25)) ENTAO
+           ESCREVAL("PESSOA COM O PESO NORMAL")
+        SENAO
+             SE ((IMC>=25) E (IMC<30)) ENTAO
+                ESCREVAL("PESSOA COM SOBREPESO")
+             SENAO
+                  SE ((IMC>=30) E (IMC<40)) ENTAO
+                     ESCREVAL("PESSOA OBESA")
+                  SENAO
+                       ESCREVAL("OBESO MÓRBIDO")
+                  FIMSE
+             FIMSE
+        FIMSE
+   FIMSE
+   FIMALGORITMO
